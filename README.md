@@ -12,8 +12,21 @@ Pulse shape discrimination (PSD) is required for many radioactive particle monit
 
 This repository consists of following Python scripts:
 
--  XXX handles the creation of synthetic pulses based on user specified paramters.
--  XXX defines and creates signals and observations used for training the detection methods.
--  
--  XXX defines the classical and model-based detection methods used for simulation.
--  XXX defines the classical and model-based PSD methods used for simulation.
+- Create_Simulated_Neutrons_and_Gammas.ipynb handles the creation of synthetic pulses based on user specified paramters. This notebook is used to create data for training, validation, and testing, along with the neutron and gamma ray templates used later on.
+- General_Functions.ipynb defines functions used in this repository.
+
+Deep Detector Module:
+- Deep_Detector_Functions.ipynb defines functions for the deep detector.
+- Deep_Detector_Networks.ipynb defines the Deep Detector model.
+- Deep_Detector_No_Margin_Networks.ipynb defines the model of the Deep Detector without the use of margins.
+- Training_Detection_Algorithms.ipynb is dedicated to training the detection algorithms.
+- Testing_Detection_Algorithms.ipynb is dedicated to testing the detection algorithms.
+
+Deep Classifier Module:
+- Classification_Algorithm_Functions.ipynb defines functions for the classification algorithms and the DNN-based algorithms models.
+- Training_Classification_Algorithms.ipynb is dedicated to training the classification algorithms.
+- Testing_Classification_Algorithms.ipynb is dedicated to testing the classification algorithms.
+
+Deep PSD Method:
+- Training_the_Deep_PSD_Method.ipynb is dedicated to training the Deep PSD Method.
+- Testing_the_Deep_PSD_Method.ipynb is dedicated to testing the Deep PSD Method.
